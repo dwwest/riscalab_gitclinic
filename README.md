@@ -16,8 +16,13 @@ people working with multiple versions of the code at the same time
 HERE IS A LIST OF COMMON GITHUB COMMANDS FOR YOUR REFERENCE:
 https://education.github.com/git-cheat-sheet-education.pdf
 
-PART ONE: GETTING STARTED
+HERE IS AN EXPLANATION OF ALL THE GITHUB TERMS WE'LL BE USING:
+https://docs.github.com/en/get-started/quickstart/github-glossary
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PART ONE: GETTING STARTED
+-------------------------
 
 HOW TO MAKE YOUR OWN GITHUB REPOSITORY AND START PUTTING YOUR OWN CODE ON GITHUB
 
@@ -48,7 +53,41 @@ or private, and for now don't check any of the three boxes at the bottom
     git remote add origin <PASTE THE LINE YOU JUST COPIED IN STEP 7 HERE>
     git push --set-upstream origin main
 
-9) 
+9) That's it!  Go to your profile and your repo should be there!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PART TWO: MAKING CHANGES
+------------------------
+
+HOW TO MAKE CHANGES TO THE REPOSITORY YOU CREATED
+
+1) For the repo you just created, we're going to practice an add, commit, and push.  This
+will make changes in your project and share those changes with the remote version
+on GitHub.  First, Make some small change to your code, or add a file to this repo
+
+2) On the command line, navigate to the top-most directory of your repo
+
+3) Run the following commands
+    git add .
+    git commit -m "<WRITE A MESSAGE ABOUT WHAT YOU CHANGED>"
+    git push
+
+4) Go to the GitHub website and you'll be able to see the commit has been added.
+Click through your commits and see how you can keep track of what lines have been changed.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PART THREE: COLLABORATING WITH OTHERS
+-------------------------------------
+
+HOW TO MAKE CHANGES AND MANAGE CONFLICTS
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
