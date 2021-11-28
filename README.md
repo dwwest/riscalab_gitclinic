@@ -37,8 +37,18 @@ account on the Rockefeller cluster
     git init -b main
     git add . $$ git commimt -m "initial commit"
 
-5) 
+5) On GitHub, go to your profile page and click the "Repositories" tab and then click "New"
 
+6) Follow the instructions, decide on a name, a description, set the repo to be either public
+or private, and for now don't check any of the three boxes at the bottom
+
+7) Copy the line from the Quick setup -- if you've done this kind of thing before
+
+8) Run the following commands from the command line
+    git remote add origin <PASTE THE LINE YOU JUST COPIED IN STEP 7 HERE>
+    git push --set-upstream origin main
+
+9) 
 
 
 
