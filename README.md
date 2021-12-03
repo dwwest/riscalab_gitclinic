@@ -5,7 +5,7 @@ in the lab.
 
 THE MAIN REASONS TO USE GITHUB ARE:
 
-1) VERSION CONTROL -- This means every time you "push" (or copied savepoint)
+1) VERSION CONTROL -- This means every time you "push" (or copy a savepoint)
 your code to GitHub, you will have a record of your code from the 
 date and time of that push.  If you break something, you'll be able
 to go back and figure out where it is
@@ -31,10 +31,18 @@ HOW TO MAKE YOUR OWN GITHUB REPOSITORY AND START PUTTING YOUR OWN CODE ON GITHUB
 2) Configure your ssh keys so your Github account can recongize your computer/
 account on the Rockefeller cluster
     a) On the github website, go to "Settings" > "SSH and GPG keys" > "New SSH key"
-    b) On your computer or on the cluster, open the command line and run the following command
+    b) On your COMPUTER open the command line and run the following command
         cat ~/.ssh/id_rsa.pub
+       On the CLUSTER open the command line and run the following commands
+        cd ~/.ssh/
+       If you have a file called "id_ed25519.pub" run the following command
+        cat id_ed25519.pub
+       If you don't have a file called "id_ed25519.pub" create it with the following command
+        ssh-keygen -t ed25519 -C "<YOUR_GITHUB_EMAIL_HERE>"
+        [IT WILL ASK FOR FILENAME DON'T TYPE ANYTHING JUST HIT ENTER]
+        cat id_ed25519.pub
     c) Copy the output and paste into the "Key" window on the GitHub add ssh key page
-    and hit "Add SSH Key"
+        and hit "Add SSH Key"
 
 3) On the command line, navigate to the folder you want up on GitHub using the cd command
 
@@ -83,7 +91,8 @@ Click through your commits and see how you can keep track of what lines have bee
 PART THREE: COLLABORATING WITH OTHERS
 -------------------------------------
 
-HOW TO MAKE CHANGES AND MANAGE CONFLICTS
+HOW TO MAKE CHANGES AND MANAGE CONFLICTS WHEN CODING WITH A GROUP
+
 
 
 
