@@ -93,6 +93,8 @@ PART THREE: COLLABORATING WITH OTHERS
 
 HOW TO MAKE CHANGES AND MANAGE CONFLICTS WHEN CODING WITH A GROUP
 
+1) download vs code
+
 1) cd to directory where you want this to be
 
 2) git clone <copied line from dropdown arrow thing>
@@ -103,7 +105,13 @@ HOW TO MAKE CHANGES AND MANAGE CONFLICTS WHEN CODING WITH A GROUP
 
 5) accept my invitation to the repo
 
-6) 
+6) WAIT I am going to push something to create a conflict
+
+6) Follow number three of part 2 to try to push your name
+
+7) You will get an error that says failed to push some refs
+
+8) 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
