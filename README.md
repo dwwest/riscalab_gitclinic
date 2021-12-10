@@ -93,7 +93,17 @@ PART THREE: COLLABORATING WITH OTHERS
 
 HOW TO MAKE CHANGES AND MANAGE CONFLICTS WHEN CODING WITH A GROUP
 
+1) cd to directory where you want this to be
 
+2) git clone <copied line from dropdown arrow thing>
+
+3) open names.txt and add your name
+
+4) ask me to add you as a collaborator on this repo
+
+5) accept my invitation to the repo
+
+6) 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
