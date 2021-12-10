@@ -31,16 +31,21 @@ HOW TO MAKE YOUR OWN GITHUB REPOSITORY AND START PUTTING YOUR OWN CODE ON GITHUB
 2) Configure your ssh keys so your Github account can recongize your computer/
 account on the Rockefeller cluster
     a) On the github website, go to "Settings" > "SSH and GPG keys" > "New SSH key"
+
     b) On your COMPUTER open the command line and run the following command
         cat ~/.ssh/id_rsa.pub
+
        On the CLUSTER open the command line and run the following commands
         cd ~/.ssh/
+
        If you have a file called "id_ed25519.pub" run the following command
         cat id_ed25519.pub
+
        If you don't have a file called "id_ed25519.pub" create it with the following command
         ssh-keygen -t ed25519 -C "<YOUR_GITHUB_EMAIL_HERE>"
         [IT WILL ASK FOR FILENAME DON'T TYPE ANYTHING JUST HIT ENTER]
         cat id_ed25519.pub
+        
     c) Copy the output and paste into the "Key" window on the GitHub add ssh key page
         and hit "Add SSH Key"
 
@@ -93,26 +98,43 @@ PART THREE: COLLABORATING WITH OTHERS
 
 HOW TO MAKE CHANGES AND MANAGE CONFLICTS WHEN CODING WITH A GROUP
 
-1) download vs code
+Now, we're going to learn how to handle merge conflicts!  For this, I'm going
+to create an issue so that you learn what to do when you're trying to push to 
+a repo that has changes in it that you don't have in your own.
 
-1) cd to directory where you want this to be
+1) First, download VS Code or some other code editor.
+https://code.visualstudio.com/
 
-2) git clone <copied line from dropdown arrow thing>
+2) cd to directory where you want to put this repository.
 
-3) open names.txt and add your name
+3) On GitHub, go to this link: https://github.com/dwwest/riscalab_gitclinic and copy 
+the text from the drop down menu that comes up when you hit the Code button.  Make sure
+that you are set to ssh key and not https.
 
-4) ask me to add you as a collaborator on this repo
+4) git clone <copied line>
 
-5) accept my invitation to the repo
+5) Open VS code and then open names.txt and add your name.
 
-6) WAIT I am going to push something to create a conflict
+6) Ask me (verbally) to add you as a collaborator on this repo.
 
-6) Follow number three of part 2 to try to push your name
+7) When it pops up, accept my invitation to the repo.
 
-7) You will get an error that says failed to push some refs
+8) WAIT -- I am going to push something to this repo create a conflict.
 
-8) 
+9) Follow number 3) of PART 2 to try to push your name.
 
+10) You will get an error that says failed to push some refs.
+
+11) In order to merge your changes with my changes, do git pull
+
+12) Open with code editor and accept both changes.  Then, delete duplicate
+    names.  We want everyone in the lab's name on here!
+
+13) Follow PART TWO step 3) again to push
+
+14) You will get another merge conflict if you are doing this clinic
+with multiple other people.  If you are the lucky duck whose push got through first,
+congrats, you're done!  If not, repeat steps 11-13 until your push is successful. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
